@@ -1,0 +1,29 @@
+#avtar_img{
+    width:60px;
+    height: 60px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
+
+#top{
+    background-color: #FFFFFF;
+}
+#body{
+    background-color: #E5E5E5;
+    padding-bottom: 30px;
+}
+
+#sub-title{
+    padding-left: 150px;
+}
+
+.card{
+    width:570px;
+}
+
+#one,#two,#three,#four,#five,#six{
+    display : none
+}

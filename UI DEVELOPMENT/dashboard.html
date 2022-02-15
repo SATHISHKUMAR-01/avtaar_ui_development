@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Avtar</title>
+  </head>
+
+  <body>
+    <div class="d-flex pt-5  pb-3 row" id="top">
+      <div class="text-center col-4">
+        <img src="images/avtaar.png" alt="avtar" id="avtar_img" />
+      </div>
+      <div class="navigation col-8">
+        <a href="/" class="ps-5 pe-5 fs-5">ASSIGNMENTS</a>
+        <a href="/" class="ps-5 pe-5 fs-5">INTERNSHIPS</a>
+        <a href="/" class="ps-5 pe-5 fs-5">ABOUT US</a>
+        <a href="/" class="ps-5 pe-5 fs-5">CONTACT US</a>
+      </div>
+    </div>
+
+    <div id="body">
+      <div class="pt-3" id="sub-title">
+        <p class="text-dark fs-5 fw-bolder">Recruiter Dashboard</p>
+
+        <div class="d-flex">
+          <div class="dropdown me-4" ">
+            <a
+              class="btn btn-light btn-outline-dark dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdown_career"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Select Career
+            </a>
+
+            <ul class="dropdown-menu" style="width: 320px;" aria-labelledby="dropdownMenuLink">
+
+              <input
+                class="form-check-input ms-2"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio_fsd"
+                value="Fullstack_developer"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+              Fullstack Developer
+              </label><br>
+            
+              <input
+                class="form-check-input ms-5"
+                type="checkbox"
+                value="Software Development Life Cycle"
+                id="check_sw"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Software Development Life Cycle
+              </label> <br>
+
+              <input
+                class="form-check-input ms-5"
+                type="checkbox"
+                value="Programming"
+                id="check_programming"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Programming
+              </label><br>
+
+              <input
+                class="form-check-input ms-5"
+                type="checkbox"
+                value="Mobile app development"
+                id="check_app"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Mobile app development
+              </label><br>
+
+              <input
+                class="form-check-input ms-5"
+                type="checkbox"
+                value="Github version control"
+                id="check_github"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+                Github version control
+              </label><br>
+
+              <input
+                class="form-check-input ms-5"
+                type="checkbox"
+                value="Backend"
+                id="check_backend"
+              />
+              <label class="form-check-label" for="defaultCheck1">
+               Backend
+              </label><br>
+
+              <input
+              class="form-check-input ms-2"
+              type="radio"
+              name="flexRadioDefault"
+              id="radio_ux"
+              />
+            <label class="form-check-label" for="flexRadioDefault1">
+            UX Designer
+            </label><br>
+          
+            <input
+              class="form-check-input ms-5"
+              type="checkbox"
+              id="check_wire"
+              value="Wireframing"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Wireframing
+            </label> <br>
+
+            <input
+              class="form-check-input ms-5"
+              type="checkbox"
+              id="check_figma"
+              value="Figma"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Figma
+            </label><br>
+
+            <input
+              class="form-check-input ms-5"
+              type="checkbox"
+              id="check_user"
+              value="User research"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              User research
+            </label><br>
+
+            <input
+              class="form-check-input ms-5"
+              type="checkbox"
+              value="Problem solving"
+              id="check_problem"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Problem solving
+            </label><br>
+             <hr>
+
+             <div class="d-flex">
+              <button type="button" id="clear_career" class="btn btn-light ">Clear</button>
+              <button type="button" id="apply_career" class="btn text-light" style="background-color: purple;">Apply</button>  
+
+             </div>
+
+            </ul>
+          </div>
+          <div class="dropdown me-4">
+            <a
+              class="btn btn-light btn-outline-dark dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdown_year"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              College Year
+            </a>
+
+            <ul class="dropdown-menu" style="width: 100px;" aria-labelledby="dropdownMenuLink">
+
+              <input
+                class="form-check-input ms-2"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio_1"
+                value="1st year"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+              1st Year
+              </label><br>
+
+              <input
+                class="form-check-input ms-2"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio_2"
+                value="2nd year"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+             2nd Year
+              </label><br>
+
+              <input
+                class="form-check-input ms-2"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio_3"
+                value="3rd year"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+              3rd Year
+              </label><br>
+              <input
+                class="form-check-input ms-2"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio_4"
+                value="4th year"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+              4th Year
+              </label><br>
+
+              <hr>
+
+             <div class="d-flex">
+              <button type="button" id="clear_year" class="btn btn-light ">Clear</button>
+              <button type="button" id="apply_year" class="btn text-light" style="background-color: purple;">Apply</button>  
+
+             </div>
+            
+            </ul>
+          </div>
+
+
+          <div class="dropdown me-4">
+            <a
+              class="btn btn-light btn-outline-dark dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdown_location"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Location
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <input
+              class="form-check-input ms-1"
+              id="check_mumbai"
+              value="Mumbai"
+              type="checkbox" 
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Mumbai
+            </label><br>
+            <input
+              class="form-check-input ms-1"
+              id="check_chennai"
+              value="Chennai"
+              type="checkbox" 
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Chennai
+            </label><br>
+            <input
+              class="form-check-input ms-1"
+              id="check_delhi"
+              value="Delhi"
+              type="checkbox" 
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Delhi
+            </label><br>
+            <input
+              class="form-check-input ms-1"
+              id="check_bangalore"
+              value="Bangalore"
+              type="checkbox" 
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Bangalore
+            </label><br>
+            <hr>
+            <div class="d-flex">
+              <button type="button" id="clear_location" class="btn btn-light ">Clear</button>
+              <button type="button"   id="apply_location" class="btn text-light" style="background-color: purple;">Apply</button>  
+
+             </div>
+            </ul>
+            
+          </div>
+        </div>
+
+        <div class="mt-3" id="before_values">
+          
+        </div>
+
+        <div class="row pt-5">
+
+          <div class="col" id="one" >
+            <div class="card" style="height:400px">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/person.png"
+                    alt="person"
+                    style="width: 180px"
+                    class="mt-3 ms-3"
+                  />
+                </div>
+                <div class="col">
+                  <h1 class="pe-3 pt-3">KRISHNASAMY SUBRAMANIYAM</h1>
+                  <p>Aspiring UX Designer</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-4">
+                  <p class="m-3 fs-3">Top Areas</p>
+                </div>
+                <div class="col-8" id="card1" >
+                  <p class="border m-3 rounded ps-1">
+                    Software Development Life Cycle</p>
+                  <p class="border m-3 rounded ps-1">Software dev methodologies</p>
+                  <p class="border m-3 rounded ps-1">Github version control</p>
+                </div>
+                <div class="text-end pe-4 mt-1 text-secondary">
+                  & x more
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="two">
+            <div class="card" style="height:400px" id="card">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/person.png"
+                    alt="person"
+                    style="width: 180px"
+                    class="mt-3 ms-3"
+                  />
+                </div>
+                <div class="col">
+                  <h1 class="pe-3 pt-3">KRISHNASAMY RAMAMOORTHY</h1>
+                  <p>Aspiring Full Stack Developer</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-4">
+                  <p class="m-3 fs-3">Top Areas</p>
+                </div>
+                <div class="col-8"  id="card2">
+                  <p class="border m-3 rounded ps-1">
+                    Software Development Life Cycle
+                  </p>
+      
+                  <p class="border m-3 rounded ps-1">Github version control</p>
+                </div>
+                <div class="text-end pe-4 mt-5 text-secondary">
+                  & x more
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col" id="three">
+            <div class="card"  style="height:400px" id="card">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/person.png"
+                    alt="person"
+                    style="width: 180px"
+                    class="mt-3 ms-3"
+                  />
+                </div>
+                <div class="col">
+                  <h1 class="pe-3 pt-3">RAMASAMY SUBRAMANIYAM</h1>
+                  <p>Aspiring UX Designer</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-4">
+                  <p class="m-3 fs-3">Top Areas</p>
+                </div>
+                <div class="col-8"  id="card3">
+                  <p class="border m-3 rounded ps-1">
+                    Software Development Life Cycle
+                  </p>
+                  <p class="border m-3 rounded ps-1">Wireframing</p>
+                  <p class="border m-3 rounded ps-1">Backend</p>
+                </div>
+                <div class="text-end pe-4 mt-1 text-secondary">
+                  & x more
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="four">
+            <div class="card"  style="height:400px" id="card">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/person.png"
+                    alt="person"
+                    style="width: 180px"
+                    class="mt-3 ms-3"
+                  />
+                </div>
+                <div class="col">
+                  <h1 class="pe-3 pt-3">SATHISH KUMAR</h1>
+                  <p>Aspiring UX Designer</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-4">
+                  <p class="m-3 fs-3">Top Areas</p>
+                </div>
+                <div class="col-8"  id="card4">
+                  <p class="border rounded m-3 ps-1">
+                    Software Development Life Cycle
+                  </p>
+                  <p class="border rounded m-3 ps-1">Software dev methodologies</p>
+                  <p class="border rounded m-3 ps-1">Github version control</p>
+                </div>
+                <div class="text-end pe-4 mt-1 text-secondary">
+                  & x more
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col" id="five">
+            <div class="card" style="height:400px" id="card">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/person.png"
+                    alt="person"
+                    style="width: 180px"
+                    class="mt-3 ms-3"
+                  />
+                </div>
+                <div class="col">
+                  <h1 class="pe-3 pt-3">ARJUN SUBRAMANIYAM</h1>
+                  <p>Aspiring UX Designer</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-4">
+                  <p class="m-3 fs-3">Top Areas</p>
+                </div>
+                <div class="col-8"  id="card5">
+                  <p class="border rounded m-3 ps-1">
+                    Figma
+                  </p>
+                  <p class="border  rounded m-3 ps-1">User research</p>
+                  
+                </div>
+                <div class="text-end pe-4 mt-5 text-secondary">
+                  & x more
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="six">
+            <div class="card" style="height:400px" id="card">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="images/person.png"
+                    alt="person"
+                    style="width: 180px"
+                    class="mt-3 ms-3"
+                  />
+                </div>
+                <div class="col">
+                  <h1 class="pe-3 pt-3">KRISHNASAMY SUBRAMANIYAM</h1>
+                  <p>Aspiring UX Designer</p>
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-4">
+                  <p class="m-3 fs-3">Top Areas</p>
+                </div>
+                <div class="col-8"  id="card6">
+                  <p class="border m-3 ps-1">
+                    Software Development Life Cycle
+                  </p>
+                  <p class="border rounded m-3 ps-1">Software dev methodologies</p>
+                  <p class="border rounded m-3 ps-1">Github version control</p>
+                </div>
+                <div class="text-end pe-4 mt-1 text-secondary">
+                  & x more
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="career.js"></script>
+    <script src="year.js"></script>
+    <script src="location.js"></script>
+  </body>
+</html>
